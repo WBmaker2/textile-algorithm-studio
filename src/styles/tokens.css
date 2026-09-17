@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light;
+
+  --paper: #f2f1ec;
+  --paper-card: #fbfaf7;
+  --paper-sunk: #e9e8e2;
+
+  --ink: #16202e;
+  --ink-soft: #4a5666;
+  --ink-faint: #5a6572;
+  --rule: #c8cbc1;
+  --rule-strong: #838a7e;
+
+  --warp: #27407b;
+  --warp-soft: #dfe4f0;
+  --weft: #c2422b;
+  --weft-soft: #f6e2dc;
+
+  --dye-indigo: #27407b;
+  --dye-rust: #c2422b;
+  --dye-moss: #4c6141;
+  --dye-ochre: #b8801f;
+  --dye-plum: #6d3350;
+  --dye-charcoal: #2f3439;
+  --dye-lilac: #7d7b9c;
+
+  --warn: #a2620c;
+  --warn-soft: #f6ecda;
+  --ok: #2f6b4f;
+
+  --focus: #1b4fd8;
+
+  --radius: 14px;
+  --radius-sm: 10px;
+  --shadow-lift: 0 1px 2px rgb(22 32 46 / 8%), 0 12px 28px -18px rgb(22 32 46 / 34%);
+  --shadow-pop: 0 2px 4px rgb(22 32 46 / 10%), 0 24px 52px -22px rgb(22 32 46 / 38%);
+
+  --font-ui: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont,
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif;
+
+  --step-0: clamp(0.94rem, 0.9rem + 0.2vw, 1rem);
+  --step-1: clamp(1.06rem, 1rem + 0.3vw, 1.2rem);
+  --step-2: clamp(1.24rem, 1.1rem + 0.6vw, 1.6rem);
+  --step-3: clamp(1.5rem, 1.25rem + 1.1vw, 2.2rem);
+  --step-4: clamp(1.85rem, 1.4rem + 2vw, 3rem);
+
+  --gap-1: 4px;
+  --gap-2: 8px;
+  --gap-3: 12px;
+  --gap-4: 16px;
+  --gap-5: 24px;
+  --gap-6: 32px;
+  --gap-7: 48px;
+
+  --duration: 180ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+::selection {
+  background: var(--warp-soft);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}

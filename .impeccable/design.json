@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "appId": "textile-algorithm-studio",
+  "world": "지단 직물 견본 장부",
+  "mode": "operate",
+  "colorStrategy": "restrained",
+  "tokens": {
+    "paper": "#f2f1ec",
+    "paperCard": "#fbfaf7",
+    "paperSunk": "#e9e8e2",
+    "ink": "#16202e",
+    "inkSoft": "#4a5666",
+    "inkFaint": "#5a6572",
+    "rule": "#c8cbc1",
+    "ruleStrong": "#838a7e",
+    "warp": "#27407b",
+    "weft": "#c2422b",
+    "warn": "#a2620c",
+    "ok": "#2f6b4f",
+    "focus": "#1b4fd8"
+  },
+  "dyes": [
+    { "id": "indigo", "name": "쪽", "hex": "#27407b" },
+    { "id": "rust", "name": "다홍", "hex": "#c2422b" },
+    { "id": "moss", "name": "풀", "hex": "#4c6141" },
+    { "id": "ochre", "name": "황토", "hex": "#b8801f" },
+    { "id": "plum", "name": "자두", "hex": "#6d3350" },
+    { "id": "charcoal", "name": "숯", "hex": "#2f3439" },
+    { "id": "lilac", "name": "라일락", "hex": "#7d7b9c" },
+    { "id": "sand", "name": "모래", "hex": "#cbb894" }
+  ],
+  "font": {
+    "ui": "Pretendard Variable, Pretendard, -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif",
+    "numeric": "tabular-nums"
+  },
+  "spacing": [4, 8, 12, 16, 24, 32, 48],
+  "radius": { "panel": 14, "control": 10, "cell": 5 },
+  "shadow": {
+    "lift": "0 1px 2px rgb(22 32 46 / 8%), 0 12px 28px -18px rgb(22 32 46 / 34%)",
+    "pop": "0 2px 4px rgb(22 32 46 / 10%), 0 24px 52px -22px rgb(22 32 46 / 38%)"
+  },
+  "motion": {
+    "duration": 180,
+    "ease": "cubic-bezier(0.16, 1, 0.3, 1)",
+    "signature": "gi-pulse aura on the inspection button only"
+  },
+  "verified": {
+    "contrast": { "minText": 4.83, "minControlBoundary": 3.13 },
+    "viewportWidths": [320, 360, 390, 768, 1280],
+    "horizontalScroll": false,
+    "tests": 31
+  }
+}
