@@ -52,5 +52,13 @@
 - [x] reduced-motion에서 gi-pulse가 정적 테두리인지 확인
 - [x] 일반 입력 반응 100ms 내 측정(29.8ms)
 - [x] 데스크톱·모바일 화면 재확인
-- [ ] 공개 URL의 자산 경로와 기능 직접 확인(배포 후)
+- [x] 공개 URL의 자산 경로와 기능 직접 확인(배포 후)
+  - https://wbmaker2.github.io/textile-algorithm-studio/ 200, 제목·예측 3항·
+    시작 버튼 비활성 상태까지 부팅 확인, JS/CSS 하위 경로 200
 - [ ] 교과 관점의 단순화·오개념 검토(교사 검토, 별도 범위)
+
+## 배포 기록 (2026-09-17)
+
+- 저장소: https://github.com/WBmaker2/textile-algorithm-studio (공개)
+- 커밋 `737f5c4` 푸시 → Actions `Deploy to GitHub Pages` 성공
+- Pages 소스: GitHub Actions(workflow 빌드). 이후 `main` 푸시마다 자동 배포
